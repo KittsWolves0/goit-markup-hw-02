@@ -9,14 +9,21 @@
 контакти у футері rgba(255, 255, 255, 0.6);
 */
 
-root{
-
+:root{
+--accent-color: #2196F3;
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--logo-color: #000000;
+--second-text-color: #FFFFFF;
+--second-background-color: #F5F4FA;
+--primary-background-color: #2F303A
 }
 
 body{
     background-color: #FFFFFF;
-    color: #757575;
+    color: var(--primary-text-color);
 }
+
 
 
 /* Прибирає крапки */
@@ -25,21 +32,85 @@ body{
 }
 
 
+
 /* Лого */
 .logo{
-    color: #000000
+    color: var(--logo-colo);
 }
 
-.logo-axent{
-    color: var();
+.logo-accent{
+    color: var(--accent-color);
 }
+
 
 
 /* Навігація */
-.site-nav a{
-    color: #212121;
+.site-nav-links{
+    color: var(--title-text-color);
+}
+
+.site-nav-links:hover, .site-nav-links:focus{
+    color: var(--accent-color);
 }
 
 .contacts{
-    color: #757575;
+    color: var(--primary-text-color);
+}
+
+.contacts:hover, .contacts:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* Герой */
+.hero-title{
+    color: var(--second-text-color);
+    background-color: var(--primary-background-color);
+}
+
+.hero-button{
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+.titles{
+    color: var(--title-text-color);
+}
+
+
+
+/* Особливості */
+.title{
+    display:none;
+}
+
+
+
+/* Команда */
+.team{
+    background-color: var(--second-background-color);
+}
+
+.team-card{
+background-color: #FFFFFF;
+}
+
+
+
+/* Підвал */
+.footer{
+    background-color: var(--primary-background-color);
+}
+
+.footer-logo{
+    color: var(--second-text-color);
+}
+
+.footer-affress{
+    color: var(--second-text-color);
+}
+
+.footer-contacts{
+    color: rgba(255, 255, 255, 0.6);
 }
